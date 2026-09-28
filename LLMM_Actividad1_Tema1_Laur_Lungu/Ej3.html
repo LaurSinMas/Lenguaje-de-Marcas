@@ -7,15 +7,36 @@
     <style>
         .prueba1 {
             border: 2px solid blue;
-            border-collapse: collapse;
+            border-collapse: separate;
             border-spacing: 3px;
-            
+            padding: 10px;
+            width: 300px;
+            height:150px;
         }
 
         
         .prueba1 td {
             border: 2px solid blue;
-            margin-left: 20px;
+            padding-left: 10px;
+        }
+        .prueba2 {
+            text-align: center;
+            border: 2px solid gold;
+            border-collapse: collapse;
+            padding: 10px;
+            width: 400px;
+            height:250px;
+        }
+        .prueba2 td, .prueba2 th {
+            border: 2px solid gold;
+            padding-left: 10px;
+            height: 50px;
+        }
+        .green {
+            background-color: rgb(116, 218, 69);
+        }
+        .grey {
+            background-color: rgb(186, 183, 183);
         }
     </style>
 </head>
@@ -46,37 +67,37 @@
 
     <br>
 
-    <table>
+    <table class="prueba2">
         <caption>Tabla de prueba 2</caption>
         <thead>
             <tr>
-                <th>columna 1</th>
-                <th>columna 2</th>
-                <th>columna 3</th>
-                <th>columna 4</th>
+                <th class="grey">columna 1</th>
+                <th class="grey">columna 2</th>
+                <th class="grey">columna 3</th>
+                <th class="grey">columna 4</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>col1</td>
-                <td colspan="2">col2</td>
-                <td>col3</td>
+                <td class="green">col1</td>
+                <td class="green" colspan="2">col2</td>
+                <td class="green">col3</td>
             </tr>
-            <tr><td>colum1</td>
-                <td rowspan="2">colum2</td>
-                <td>colum3</td>
-                <td>colum4</td>
-            </tr>
-            <tr>
-                <td>column1</td>
-                <td>column3</td>
-                <td>column4</td>
+            <tr><td class="grey">colum1</td>
+                <td class="grey" rowspan="2">colum2</td>
+                <td class="grey">colum3</td>
+                <td class="grey">colum4</td>
             </tr>
             <tr>
-                <td>colu1</td>
-                <td>colu2</td>
-                <td>colu3</td>
-                <td>colu4</td>
+                <td class="green">column1</td>
+                <td class="green">column3</td>
+                <td class="green">column4</td>
+            </tr>
+            <tr>
+                <td class="grey">colu1</td>
+                <td class="grey">colu2</td>
+                <td class="grey">colu3</td>
+                <td class="grey">colu4</td>
             </tr>
         </tbody>
     </table>
