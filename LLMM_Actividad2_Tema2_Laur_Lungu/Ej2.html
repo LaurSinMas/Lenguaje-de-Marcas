@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <style>
+        .lista1 {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+            background-color: rgb(109, 96, 48);
+            color: white;
+        }
+        .red {
+            background-color: rgb(255, 0, 0);
+            color: white;
+        }
+        .green {
+            background-color: rgb(0, 255, 0);
+            color: white;
+        }
+        li {
+            padding-left: 0;
+            width: 100px;
+            height:40px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .lista1 a {
+            color: white;
+            text-decoration: none;
+        }
+        .lista2 {
+            list-style: none;
+            padding: 0;
+        }
+    </style>
+    <ul class="lista1">
+        <li><a href="#o1">opción 1</a></li>
+        <li><a href="#o2">opción 2</a></li>
+        <li><a href="#o3">opción 3</a></li>
+        <li><a href="#o4">opción 4</a></li>
+        <li><a href="#o5">opción 5</a></li>
+    </ul>
+    <hr>
+    <ul class="lista2">
+        <li class="green" id="o1">opción 1</li>
+        <li class="green" id="o2">opción 2</li>
+        <li class="red" id="o3">opción 3</li>
+        <li class="green" id="o4">opción 4</li>
+        <li class="green" id="o5">opción 5</li>
+    </ul>
+</body>
+</html>
