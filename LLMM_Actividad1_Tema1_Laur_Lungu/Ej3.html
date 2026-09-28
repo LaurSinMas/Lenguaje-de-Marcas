@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <style>
+        .prueba1 {
+            border: 2px solid blue;
+            border-collapse: collapse;
+            border-spacing: 3px;
+            
+        }
+
+        
+        .prueba1 td {
+            border: 2px solid blue;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <table class="prueba1">
+        <caption>Tabla de prueba 1</caption>
+        <thead>
+            <tr>
+                <th>columna 1</th>
+                <th>columna 2</th>
+                <th>columna 3</th>
+                <th>columna 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>col1</td>
+                <td colspan="2">col2</td>
+                <td rowspan="2">col3</td>
+            </tr>
+            <tr>
+                <td>colum1</td>
+                <td>colum2</td>
+                <td>colum4</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <table>
+        <caption>Tabla de prueba 2</caption>
+        <thead>
+            <tr>
+                <th>columna 1</th>
+                <th>columna 2</th>
+                <th>columna 3</th>
+                <th>columna 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>col1</td>
+                <td colspan="2">col2</td>
+                <td>col3</td>
+            </tr>
+            <tr><td>colum1</td>
+                <td rowspan="2">colum2</td>
+                <td>colum3</td>
+                <td>colum4</td>
+            </tr>
+            <tr>
+                <td>column1</td>
+                <td>column3</td>
+                <td>column4</td>
+            </tr>
+            <tr>
+                <td>colu1</td>
+                <td>colu2</td>
+                <td>colu3</td>
+                <td>colu4</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
