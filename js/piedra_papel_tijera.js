@@ -19,7 +19,10 @@ partidas++;
     empatadas++;
     }
 
-    else if (jugador === "piedra" && maquina === "tijera" || jugador === "papel" && maquina === "piedra" || jugador === "tijera" && maquina === "papel"){
+    else if (jugador === "piedra" && maquina === "tijera" || 
+        jugador === "papel" && maquina === "piedra" || 
+        jugador === "tijera" && maquina === "papel")
+        {
     mensaje = "Has ganado";
     ganadas++;
     }
