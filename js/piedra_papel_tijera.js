@@ -7,7 +7,7 @@ let empatadas = 0;
 
 
 function jugar(jugador){
-    const opciones = ["piedra", "papel", "tijeras"];
+    const opciones = ["piedra", "papel", "tijera"];
     const maquina = opciones[Math.floor(Math.random() * opciones.length)]
 let mensaje;
 
@@ -29,6 +29,14 @@ partidas++;
     perdidas++;
     }
 
-    console.log(mensaje);
+    document.getElementById("marcador").textContent = "Partidas jugadas: " + partidas;
+    document.getElementById("ganadas").textContent = "Partidas ganadas: " + ganadas;
+    document.getElementById("perdidas").textContent = "Partidas perdidas: " + perdidas;
+    document.getElementById("empatadas").textContent = "Partidas empatadas: " + empatadas;
+    document.getElementById("jugada-jugador").textContent = "Tu jugada: " + jugador + ", Jugada de la máquina: " + maquina + ". " + mensaje;    
+    document.getElementById("jugada-maquina").textContent = "Jugada de la máquina: " + maquina; 
+    document.getElementById("mensaje").textContent = mensaje;
+
 }
+
 

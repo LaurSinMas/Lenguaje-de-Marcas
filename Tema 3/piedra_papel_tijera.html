@@ -7,10 +7,15 @@
     <body>
         <main>
             <div class="opciones">
-                <button type="button" onclick="juego('Piedra')">Piedra</button>
-                <button type="button" onclick="juego('Papel')">Papel</button>
-                <button type="button" onclick="juego('Tijera')">Tijera</button>
+                <button type="button" onclick="jugar('piedra')">Piedra</button>
+                <button type="button" onclick="jugar('papel')">Papel</button>
+                <button type="button" onclick="jugar('tijera')">Tijera</button>
             </div>
+
+            <p id="marcador">Partidas jugadas: 0</p>
+            <p id="ganadas">Partidas ganadas: 0</p>
+            <p id="perdidas">Partidas perdidas: 0</p>
+            <p id="empatadas">Partidas empatadas: 0</p>
 
             <section id="resultado">
                 <h2>resultado</h2>
