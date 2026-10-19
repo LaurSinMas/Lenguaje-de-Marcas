@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Piedra, papel o tijera</title>
+        <script src="../js/piedra_papel_tijera.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <div class="opciones">
+                <button type="button" onclick="juego('Piedra')">Piedra</button>
+                <button type="button" onclick="juego('Papel')">Papel</button>
+                <button type="button" onclick="juego('Tijera')">Tijera</button>
+            </div>
+
+            <section id="resultado">
+                <h2>resultado</h2>
+                <p id="jugada-jugador">Tu jugada aparecerá aquí</p>
+                <p id="jugada-maquina">La maquina eligió</p>
+                <p id="mensaje"></p>
+            </section>
+        </main>
+    </body>
+</html>
