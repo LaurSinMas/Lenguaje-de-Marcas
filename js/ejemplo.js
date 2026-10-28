@@ -22,7 +22,7 @@ let multiplicacion = 5 * 2;
 let division = 5 / 2;
 let modulo = 5 % 2;
 */
-
+/*
 var numero1 = 5;
 var numero2 = 8;
 
@@ -41,3 +41,25 @@ if(numero1 < 0 || numero1 != 0) {
 if(++numero1 < numero2) {
     alert("numero1 es menor que numero2 después de incrementar");
 }
+*/
+let n = 4;
+let resultado = 1;
+
+
+function numFact() {
+        for(let i = n; i > 0; i--) {
+        resultado *= i;
+        i--
+    } 
+    return resultado;
+}
+console.log(numFact());
+
+var producto = 20;
+
+var impuestos = 1.21;
+var gastosEnvios = 10;
+var precioTotal;
+
+precioTotal = (producto * impuestos) + gastosEnvios;
+console.log(precioTotal);
