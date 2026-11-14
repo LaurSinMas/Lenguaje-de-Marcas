@@ -1,27 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Piedra, papel o tijera</title>
-        <script src="../js/piedra_papel_tijera.js" defer></script>
+        <script src="Tema 3/js/piedra_papel_tijera.js" defer></script>
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="css/navegacion.css">
     </head>
     <body>
-        <main>
-            <div class="opciones">
-                <button type="button" onclick="jugar('piedra')">Piedra</button>
-                <button type="button" onclick="jugar('papel')">Papel</button>
-                <button type="button" onclick="jugar('tijera')">Tijera</button>
+        <nav class="site-nav site-nav-standalone">
+            <a href="index.html">Inicio</a>
+            <a href="formulario.html">Formulario</a>
+            <a href="horario.html">Horario</a>
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button">Actividades Tema 2</button>
+                <div class="dropdown-menu">
+                    <a href="LLMM_Actividad1_Tema1_Laur_Lungu/Ej1.html">Actividad 1</a>
+                    <a href="LLMM_Actividad2_Tema2_Laur_Lungu/Ej1.html">Actividad 2</a>
+                    <a href="LLMM_Actividad3_Tema1_Laur_Lungu/Ej1.html">Actividad 3</a>
+                    <a href="LLMM_Actividad4_Tema1_Laur_Lungu/Página_Principal.html">Actividad 4</a>
+                </div>
             </div>
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button">Actividades Tema 3</button>
+                <div class="dropdown-menu">
+                    <a href="calculadora.html">Calculadora</a>
+                    <a href="piedra_papel_tijera.html">Piedra, papel o tijera</a>
+                </div>
+            </div>
+        </nav>
+        <main class="juego-ppt">
+            <h1>Piedra, papel o tijera</h1>
+            <section class="panel-opciones" aria-labelledby="titulo-opciones">
+                <h2 id="titulo-opciones">Elige tu jugada</h2>
+                <div class="opciones">
+                    <button class="boton-opcion" type="button" onclick="jugar('piedra')">
+                        <img src="img/piedra.png" alt="">
+                        <span>Piedra</span>
+                    </button>
+                    <button class="boton-opcion" type="button" onclick="jugar('papel')">
+                        <img src="img/papel.png" alt="">
+                        <span>Papel</span>
+                    </button>
+                    <button class="boton-opcion" type="button" onclick="jugar('tijera')">
+                        <img src="img/tijera.png" alt="">
+                        <span>Tijera</span>
+                    </button>
+                </div>
+            </section>
 
-            <p id="marcador">Partidas jugadas: 0</p>
-            <p id="ganadas">Partidas ganadas: 0</p>
-            <p id="perdidas">Partidas perdidas: 0</p>
-            <p id="empatadas">Partidas empatadas: 0</p>
+            <section class="marcador-ppt" aria-label="Marcador">
+                <p id="marcador">Partidas jugadas: 0</p>
+                <p id="ganadas">Partidas ganadas: 0</p>
+                <p id="perdidas">Partidas perdidas: 0</p>
+                <p id="empatadas">Partidas empatadas: 0</p>
+            </section>
 
-            <section id="resultado">
-                <h2>resultado</h2>
-                <p id="jugada-jugador">Tu jugada aparecerá aquí</p>
-                <p id="jugada-maquina">La maquina eligió</p>
-                <p id="mensaje"></p>
+            <section class="elecciones" aria-label="Elecciones de la ronda">
+                <article class="carta-eleccion">
+                    <h2>Tu elección</h2>
+                    <img id="imagen-jugador" alt="" hidden>
+                    <p id="jugada-jugador">Aún no has elegido.</p>
+                </article>
+                <article class="carta-eleccion">
+                    <h2>Elección de la máquina</h2>
+                    <img id="imagen-maquina" alt="" hidden>
+                    <p id="jugada-maquina">Aún no ha elegido.</p>
+                </article>
+            </section>
+
+            <section class="resultado-ronda" aria-labelledby="titulo-resultado">
+                <h2 id="titulo-resultado">Resultado de la ronda</h2>
+                <p id="mensaje" role="status" aria-live="polite">Elige piedra, papel o tijera para empezar.</p>
             </section>
         </main>
     </body>

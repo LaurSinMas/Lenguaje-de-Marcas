@@ -1,52 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../js/calculadora.js"></script>
     <title>Calculadora</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/navegacion.css">
+    <script src="Tema 3/js/calculadora.js" defer></script>
 </head>
 <body>
-    <h1>Calculadora</h1>
-    <table>
-        <thead>
-            <tr>
-                <td colspan="4"><input type="text" value="0" id="pantalla"readonly></td>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Las filas de la tabla se llenarán con JavaScript -->
-            <tr>
-                <th><button onclick="escribir('%')">%</button></th>
-                <th><button onclick="escribir('CE')">CE</button></th>
-                <th><button onclick="borrar('C')">C</button></th>
-                <th><button onclick="escribir('⌫')">⌫</button></th>
-            </tr>
-            <tr>
-                <th><button onclick="escribir('7')">7</button></th>
-                <th><button onclick="escribir('8')">8</button></th>
-                <th><button onclick="escribir('9')">9</button></th>
-                <th><button onclick="escribir('/')">/</button></th>
-            </tr>
-            <tr>
-                <th><button onclick="escribir('4')">4</button></th>
-                <th><button onclick="escribir('5')">5</button></th>
-                <th><button onclick="escribir('6')">6</button></th>
-                <th><button onclick="escribir('*')">*</button></th>
-            </tr>
-            <tr>
-                <th><button onclick="escribir('1')">1</button></th>
-                <th><button onclick="escribir('2')">2</button></th>
-                <th><button onclick="escribir('3')">3</button></th>
-                <th><button onclick="escribir('-')">-</button></th>
-            </tr>
-            <tr>
-                <th><button onclick="escribir('0')">0</button></th>
-                <th><button onclick="escribir(',')">.</button></th>
-                <th><button onclick="calcular()">=</button></th>
-                <th><button onclick="escribir('+')">+</button></th>
-            </tr>
-        </tbody>
-    </table>
+    <nav class="site-nav site-nav-standalone">
+        <a href="index.html">Inicio</a>
+        <a href="formulario.html">Formulario</a>
+        <a href="horario.html">Horario</a>
+        <div class="dropdown">
+            <button class="dropdown-toggle" type="button">Actividades Tema 2</button>
+            <div class="dropdown-menu">
+                <a href="LLMM_Actividad1_Tema1_Laur_Lungu/Ej1.html">Actividad 1</a>
+                <a href="LLMM_Actividad2_Tema2_Laur_Lungu/Ej1.html">Actividad 2</a>
+                <a href="LLMM_Actividad3_Tema1_Laur_Lungu/Ej1.html">Actividad 3</a>
+                <a href="LLMM_Actividad4_Tema1_Laur_Lungu/Página_Principal.html">Actividad 4</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropdown-toggle" type="button">Actividades Tema 3</button>
+            <div class="dropdown-menu">
+                <a href="calculadora.html">Calculadora</a>
+                <a href="piedra_papel_tijera.html">Piedra, papel o tijera</a>
+            </div>
+        </div>
+    </nav>
+    <main class="pagina-calculadora">
+        <h1>Calculadora</h1>
+        <section class="calculadora" aria-label="Calculadora">
+            <input id="pantalla" class="pantalla" type="text" value="0" aria-label="Pantalla de la calculadora" aria-live="polite" readonly>
+            <div class="teclado">
+                <button class="tecla tecla-funcion" type="button" data-action="percent" aria-label="Porcentaje">%</button>
+                <button class="tecla tecla-funcion" type="button" data-action="clear-entry" aria-label="Borrar entrada">CE</button>
+                <button class="tecla tecla-funcion" type="button" data-action="clear" aria-label="Borrar todo">C</button>
+                <button class="tecla tecla-funcion" type="button" data-action="backspace" aria-label="Borrar último dígito">⌫</button>
+
+                <button class="tecla tecla-numero" type="button" data-digit="7">7</button>
+                <button class="tecla tecla-numero" type="button" data-digit="8">8</button>
+                <button class="tecla tecla-numero" type="button" data-digit="9">9</button>
+                <button class="tecla tecla-operador" type="button" data-operator="/" aria-label="Dividir">÷</button>
+
+                <button class="tecla tecla-numero" type="button" data-digit="4">4</button>
+                <button class="tecla tecla-numero" type="button" data-digit="5">5</button>
+                <button class="tecla tecla-numero" type="button" data-digit="6">6</button>
+                <button class="tecla tecla-operador" type="button" data-operator="*" aria-label="Multiplicar">×</button>
+
+                <button class="tecla tecla-numero" type="button" data-digit="1">1</button>
+                <button class="tecla tecla-numero" type="button" data-digit="2">2</button>
+                <button class="tecla tecla-numero" type="button" data-digit="3">3</button>
+                <button class="tecla tecla-operador" type="button" data-operator="-" aria-label="Restar">−</button>
+
+                <button class="tecla tecla-numero" type="button" data-digit="0">0</button>
+                <button class="tecla tecla-numero" type="button" data-action="decimal" aria-label="Separador decimal">.</button>
+                <button class="tecla tecla-igual" type="button" data-action="equals" aria-label="Igual">=</button>
+                <button class="tecla tecla-operador" type="button" data-operator="+" aria-label="Sumar">+</button>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

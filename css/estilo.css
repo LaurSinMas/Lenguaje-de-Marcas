@@ -57,6 +57,335 @@ ul {
     border: 1px solid #526779;
 }
 
+.horario .hora {
+    background-color: #e5e6ed;
+}
+
+.horario .dia-lunes {
+    background-color: #b9c9e8;
+}
+
+.horario .dia-martes {
+    background-color: #c2dfd5;
+}
+
+.horario .dia-miercoles {
+    background-color: #edcfb0;
+}
+
+.horario .dia-jueves {
+    background-color: #d8c8e8;
+}
+
+.horario .dia-viernes {
+    background-color: #e9c5cf;
+}
+
+.horario .programacion {
+    background-color: #c7dafa;
+}
+
+.horario .sistemas-informaticos {
+    background-color: #cdebd7;
+}
+
+.horario .bases-de-datos {
+    background-color: #f8d3c7;
+}
+
+.horario .ingles-profesional {
+    background-color: #e6d5f5;
+}
+
+.horario .itinerario-personal {
+    background-color: #f6e1aa;
+}
+
+.horario .proyecto-intermodular {
+    background-color: #c6e9e9;
+}
+
+.horario .lenguaje-de-marcas {
+    background-color: #f5c9d7;
+}
+
+.horario .digitalizacion {
+    background-color: #d8e5ad;
+}
+
+.horario .sostenibilidad {
+    background-color: #d2e8c1;
+}
+
+.horario .entornos-de-desarrollo {
+    background-color: #e9d8bd;
+}
+
+.horario .recreo {
+    background-color: #e7e8e8;
+}
+
+.horario .asignatura {
+    cursor: pointer;
+}
+
+.horario .asignatura:hover,
+.horario .asignatura:focus-visible {
+    filter: brightness(0.93);
+    outline: 2px solid #315777;
+    outline-offset: -3px;
+}
+
+#informacion-asignatura {
+    box-sizing: border-box;
+    width: 28rem;
+    max-width: calc(100vw - 3rem);
+    padding: 1.5rem;
+    color: #202b36;
+    background-color: #fffdf6;
+    border: 1px solid #526779;
+    border-radius: 6px;
+    box-shadow: 0 8px 24px rgb(32 43 54 / 20%);
+}
+
+#informacion-asignatura::backdrop {
+    background-color: rgb(32 43 54 / 45%);
+}
+
+#informacion-asignatura h2 {
+    margin-top: 0;
+}
+
+#informacion-asignatura button {
+    padding: 0.55rem 0.9rem;
+    color: #202b36;
+    background-color: #f2dfa0;
+    border: 1px solid #526779;
+    border-radius: 4px;
+    font: inherit;
+    cursor: pointer;
+}
+
+#informacion-asignatura button:hover,
+#informacion-asignatura button:focus-visible {
+    background-color: #e8d58e;
+}
+
+.pagina-calculadora {
+    box-sizing: border-box;
+    width: min(100% - 2rem, 24rem);
+    margin: 2rem auto;
+}
+
+.pagina-calculadora h1 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.calculadora {
+    padding: 1rem;
+    background: linear-gradient(145deg, #34495e, #18232e);
+    border: 1px solid #1b2833;
+    border-radius: 1rem;
+    box-shadow: 0 12px 28px rgb(32 43 54 / 24%);
+}
+
+.calculadora .pantalla {
+    box-sizing: border-box;
+    width: 100%;
+    height: 4.75rem;
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    color: #f8fafc;
+    background-color: #101820;
+    border: 1px solid #536372;
+    border-radius: 0.65rem;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: clamp(2rem, 8vw, 2.75rem);
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+}
+
+.teclado {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.65rem;
+}
+
+.tecla {
+    min-height: 3.75rem;
+    color: #202b36;
+    background-color: #e2e8f0;
+    border: 0;
+    border-radius: 0.7rem;
+    box-shadow: 0 3px 0 rgb(0 0 0 / 20%);
+    font: 600 1.25rem/1 system-ui, sans-serif;
+    cursor: pointer;
+    transition: filter 120ms ease, transform 120ms ease;
+}
+
+.tecla:hover {
+    filter: brightness(1.08);
+    transform: translateY(-1px);
+}
+
+.tecla:active {
+    box-shadow: none;
+    transform: translateY(2px);
+}
+
+.tecla:focus-visible {
+    outline: 3px solid #f8fafc;
+    outline-offset: 2px;
+}
+
+.tecla-funcion {
+    color: #17212b;
+    background-color: #aebbc8;
+}
+
+.tecla-operador {
+    color: #fff;
+    background-color: #3274a8;
+}
+
+.tecla-igual {
+    color: #fff;
+    background-color: #d97706;
+}
+
+.juego-ppt {
+    box-sizing: border-box;
+    width: min(100% - 2rem, 60rem);
+    margin: 2rem auto;
+}
+
+.juego-ppt > h1 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.panel-opciones,
+.carta-eleccion,
+.resultado-ronda {
+    padding: 1.25rem;
+    background-color: #fffdf6;
+    border: 1px solid #9aa9af;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgb(32 43 54 / 8%);
+}
+
+.panel-opciones h2,
+.carta-eleccion h2,
+.resultado-ronda h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.opciones {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.boton-opcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem;
+    color: #202b36;
+    background-color: #f2dfa0;
+    border: 1px solid #526779;
+    border-radius: 8px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 120ms ease, transform 120ms ease;
+}
+
+.boton-opcion img {
+    width: min(100%, 7rem);
+    aspect-ratio: 1;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+.boton-opcion:hover {
+    background-color: #e8d58e;
+    transform: translateY(-2px);
+}
+
+.boton-opcion:focus-visible {
+    outline: 3px solid #315777;
+    outline-offset: 3px;
+}
+
+.marcador-ppt {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.75rem;
+    margin: 1.25rem 0;
+}
+
+.marcador-ppt p {
+    margin: 0;
+    padding: 0.7rem;
+    text-align: center;
+    background-color: #e5e6ed;
+    border: 1px solid #9aa9af;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.elecciones {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.carta-eleccion img:not([hidden]) {
+    display: block;
+    width: min(100%, 11rem);
+    aspect-ratio: 1;
+    margin: 0 auto;
+    object-fit: contain;
+    background-color: #fff;
+    border: 1px solid #d5dce1;
+    border-radius: 8px;
+}
+
+.carta-eleccion p {
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.resultado-ronda {
+    margin-top: 1rem;
+    border-left: 6px solid #e8d58e;
+    text-align: center;
+}
+
+.resultado-ronda p {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+#mensaje[data-resultado="ganada"] {
+    color: #17643a;
+}
+
+#mensaje[data-resultado="perdida"] {
+    color: #a33131;
+}
+
+#mensaje[data-resultado="empatada"] {
+    color: #315777;
+}
+
 .formulario {
     max-width: 42rem;
 }
@@ -140,5 +469,25 @@ ul {
 
     main > div {
         padding: 1.25rem;
+    }
+
+    .marcador-ppt {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .opciones {
+        gap: 0.5rem;
+    }
+
+    .boton-opcion {
+        padding: 0.5rem 0.25rem;
+    }
+
+    .boton-opcion img {
+        width: min(100%, 5rem);
+    }
+
+    .elecciones {
+        grid-template-columns: 1fr;
     }
 }
