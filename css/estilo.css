@@ -44,6 +44,117 @@ ul {
     margin-bottom: 0;
 }
 
+.gustos {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    background:
+        radial-gradient(ellipse at 50% 0, rgb(197 220 237 / 24%), transparent 58%),
+        linear-gradient(145deg, #20384e, #263746);
+    border: 1px solid #526779;
+    border-top: 5px solid #e8d58e;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgb(32 43 54 / 16%);
+}
+
+.gustos-cabecera {
+    margin-bottom: 1.5rem;
+    color: #fffdf6;
+    text-align: center;
+}
+
+.gustos-etiqueta {
+    margin: 0 0 0.35rem;
+    color: #f2dfa0;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.gustos-cabecera h2 {
+    margin-bottom: 0.35rem;
+    color: #fffdf6;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+.gustos-cabecera > p:last-child {
+    margin: 0;
+    color: #dce7f0;
+}
+
+.gustos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+    gap: 1rem;
+}
+
+.gusto-card {
+    overflow: hidden;
+    background-color: #fffdf6;
+    border: 1px solid rgb(255 255 255 / 70%);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 18%);
+    transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.gusto-card:hover {
+    box-shadow: 0 10px 20px rgb(0 0 0 / 24%);
+    transform: translateY(-4px);
+}
+
+.gusto-imagen {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    background-color: #c5dced;
+}
+
+.gusto-imagen img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 220ms ease;
+}
+
+.gusto-card:hover .gusto-imagen img {
+    transform: scale(1.04);
+}
+
+.gusto-numero {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    padding: 0.25rem 0.55rem;
+    color: #202b36;
+    background-color: #f2dfa0;
+    border: 1px solid #fffdf6;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.gusto-texto {
+    padding: 1rem 1.1rem 1.2rem;
+}
+
+.gusto-categoria {
+    margin: 0 0 0.25rem;
+    color: #526779;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.gusto-texto h3 {
+    margin: 0;
+    color: #20384e;
+    font-size: 1.35rem;
+}
+
 .horario {
     width: 100%;
     margin: 2rem auto;
@@ -498,5 +609,17 @@ ul {
         padding: 0.35rem 0.2rem;
         font-size: 0.75rem;
         overflow-wrap: anywhere;
+    }
+
+    .gustos {
+        padding: 1.25rem;
+    }
+
+    .gustos-grid {
+        gap: 0.75rem;
+    }
+
+    .gusto-texto {
+        padding: 0.85rem;
     }
 }
