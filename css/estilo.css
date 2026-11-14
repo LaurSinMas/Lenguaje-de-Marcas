@@ -45,8 +45,10 @@ ul {
 }
 
 .horario {
+    width: 100%;
     margin: 2rem auto;
     border-collapse: collapse;
+    table-layout: fixed;
 }
 
 .horario th,
@@ -489,5 +491,12 @@ ul {
 
     .elecciones {
         grid-template-columns: 1fr;
+    }
+
+    .horario th,
+    .horario td {
+        padding: 0.35rem 0.2rem;
+        font-size: 0.75rem;
+        overflow-wrap: anywhere;
     }
 }

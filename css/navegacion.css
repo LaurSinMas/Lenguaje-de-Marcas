@@ -70,3 +70,41 @@
     background-color: #c5dced;
     border-bottom: 3px solid #263746;
 }
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    max-width: 100%;
+}
+
+pre {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+}
+
+@media (max-width: 560px) {
+    .site-nav {
+        gap: 0.4rem;
+    }
+
+    .site-nav .dropdown-menu {
+        right: 0;
+        left: auto;
+        min-width: min(10rem, calc(100vw - 1rem));
+        max-width: calc(100vw - 1rem);
+    }
+
+    .site-nav-standalone {
+        padding: 1rem;
+    }
+}
